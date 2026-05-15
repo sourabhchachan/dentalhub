@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 interface AuthState {
-  role: 'receptionist' | 'doctor' | 'admin' | 'patient' | null
+  role: 'receptionist' | 'doctor' | 'admin' | null
   userId: string | null
   staffId: string | null
   name: string | null
