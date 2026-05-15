@@ -51,17 +51,25 @@ export default function ReceptionistLayout({
               </p>
             </Link>
           </div>
-          <div className="flex shrink-0 items-center gap-2 pt-0.5">
+          <div className="flex shrink-0 items-start gap-2 pt-0.5">
             <span className="rounded-full border border-primary bg-surface-2 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-primary">
               Receptionist
             </span>
-            <button
-              type="button"
-              onClick={handleLogout}
-              className="dh-btn-ghost rounded-xl px-3 py-2 text-xs"
-            >
-              Logout
-            </button>
+            <div className="flex flex-col items-end gap-0.5">
+              <Link
+                href="/change-password"
+                className="dh-btn-ghost rounded-lg border-transparent px-2 py-1 text-[11px] font-semibold text-primary"
+              >
+                Change Password
+              </Link>
+              <button
+                type="button"
+                onClick={handleLogout}
+                className="dh-btn-ghost rounded-xl px-3 py-2 text-xs"
+              >
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </header>
